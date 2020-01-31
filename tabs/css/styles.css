@@ -1,0 +1,24 @@
+.tabs {
+  display: grid;
+}
+
+[role="tabs-group"] {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+[role="tab-to-click"] {
+  background: yellow;
+  padding: 2rem;
+}
+
+button {
+  background: gray;
+  border: 0;
+  color: #282828;
+  border-radius: 5px 5px 0 0;
+  --bs-color: rgba(0,0,0,0.1);
+  box-shadow: inset 0 -2px 5px var(--bs-color);
+  cursor:pointer;
+}
