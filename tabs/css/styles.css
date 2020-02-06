@@ -9,7 +9,7 @@
 }
 
 [role="tab-to-click"] {
-  background: yellow;
+  background: lightseagreen;
   padding: 2rem;
 }
 
@@ -21,4 +21,15 @@ button {
   --bs-color: rgba(0,0,0,0.1);
   box-shadow: inset 0 -2px 5px var(--bs-color);
   cursor:pointer;
+}
+
+button[aria-selected="true"] {
+  background: lightseagreen;
+  box-shadow: none;
+  color: rgba(0,0,0,0.7);
+}
+
+button:focus {
+  outline: 0;
+  color: rgba(0,0,0,0.6);
 }
