@@ -1,7 +1,7 @@
 const tabs = document.querySelector('.tabs');
 const tabButtons = tabs.querySelectorAll('[role=tab]');
 // creating an array of the tabs to loop through
-const tabPanels = Array.from(tabs.querySelectorAll('[role="tabpanel"]'));
+const tabPanels = Array.from(tabs.querySelectorAll('[role="tab-panel"]'));
 
 function handleTabClick(event) {
   // hide all tab panels
