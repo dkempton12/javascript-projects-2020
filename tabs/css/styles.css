@@ -2,13 +2,13 @@
   display: grid;
 }
 
-[role="tabs-group"] {
+[role="tablist"] {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
 }
 
-[role="tab-to-click"] {
+[role="tabpanel"] {
   background: lightseagreen;
   padding: 2rem;
 }
