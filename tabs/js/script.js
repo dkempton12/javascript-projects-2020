@@ -12,5 +12,7 @@ function handleTabClick(event) {
   tabButtons.forEach(tab => {
     tab.setAttribute('aria-selected', false);
   })
+  // Mark the clicked tab as selected
+  event.currentTarget.setAttribute('aria-selected', true);
 
 }
