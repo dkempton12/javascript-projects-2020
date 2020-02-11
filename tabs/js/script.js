@@ -16,12 +16,14 @@ function handleTabClick(event) {
   event.currentTarget.setAttribute('aria-selected', true);
   console.log(tabButtons);
 
-  // Find the associated tab panel and show it
+  // Finding the associated tab panel and show it
   const {id} = event.currentTarget;
 
-  // Find the panel where the aria-labelledby is equal to 'id'
+  // Finding the panel where the aria-labelledby is equal to 'id'
   const findTabPanel = tabPanels.find(panel => panel.getAttribute('aria-labeledby') === 'id');
 }
+  // Setting the clicked tab panel's hidden property to false
+  tabPanels.hidden = false;
 
 tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
 console.log(tabButtons);
