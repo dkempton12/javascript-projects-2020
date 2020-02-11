@@ -19,7 +19,7 @@ button {
   color: #282828;
   border-radius: 5px 5px 0 0;
   --bs-color: rgba(0,0,0,0.1);
-  box-shadow: inset 0 -2px 5px var(--bs-color);
+  box-shadow: inset 0 -2px 5px lightslategray;
   cursor:pointer;
 }
 
