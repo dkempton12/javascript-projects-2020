@@ -14,5 +14,7 @@ function handleTabClick(event) {
   })
   // Mark the clicked tab as selected
   event.currentTarget.setAttribute('aria-selected', true);
-
+  console.log(tabButtons);
 }
+
+tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
