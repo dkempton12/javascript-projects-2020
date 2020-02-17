@@ -5,3 +5,10 @@ function createGame(gameName) {
     return `Your ${gameName} score is ${score}: `;
   }
 }
+
+// Calling the parent-level scope from a child-level (closure)
+const hockeyGame = createGame('Hockey');
+hockeyGame();
+
+const soccerGame = createGame('Soccer');
+soccerGame();
