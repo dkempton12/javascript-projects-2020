@@ -3,10 +3,15 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  background: #007FFF;
 }
 
 .container {
   height: 80vh;
   max-width: 400px;
+  padding: 15px;
+  border: 5px solid #FFD700;
+  border-radius: 3px;
   overflow: auto;
+  background: #FFF;
 }
