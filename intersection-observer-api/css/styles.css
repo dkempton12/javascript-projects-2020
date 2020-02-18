@@ -14,4 +14,16 @@ body {
   border-radius: 3px;
   overflow: auto;
   background: #FFF;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+/* Button */
+.accept {
+  padding: 15px;
+  border-radius: 3px;
+  transition: all 0.6s;
+  font-size: 18px;
+  background: #7F00FF;
+  color: #FFF;
 }
