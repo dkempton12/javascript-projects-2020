@@ -1,6 +1,8 @@
 const text = document.querySelector('.text');
+
 const button = document.querySelector('.accept');
 
+// Displays button if intersectionRatio is equal to 1
 function observationCallBack(payback) {
   if (payback[0].intersectionRatio === 1) {
     button.disabled = false;
