@@ -12,10 +12,13 @@ body {
   padding: 15px;
   border: 5px solid #FFD700;
   border-radius: 3px;
-  overflow: auto;
   background: #FFF;
   display: grid;
   grid-template-rows: 1fr auto;
+}
+
+.text {
+  overflow: scroll;
 }
 
 /* Button */
@@ -27,3 +30,9 @@ body {
   background: #7F00FF;
   color: #FFF;
 }
+
+.accept[disabled] {
+  opacity: 0.1;
+  transform: translateX(-500%) scale(0.5);
+}
+
