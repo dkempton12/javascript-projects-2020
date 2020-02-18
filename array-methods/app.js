@@ -1,10 +1,7 @@
 // forEach method
-const mealOrders = [100, 110, 98, 120, 60];
-const mealTaxMA = 0.0625;
-
-const mealsWithTax = mealOrders.forEach(
-  mealOrder => mealOrder * mealTaxMA
-  );
+const numbers = [100, 200, 300, 400, 500, 600];
+const numbersDoubled = numbers.forEach(number => number * 2);
+console.log(numbersDoubled);
 
 // Map method
 const countries = ['United States', 'Canada', 'Mexico', 'England', 'Jamaica'];
