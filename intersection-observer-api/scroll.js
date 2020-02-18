@@ -1,5 +1,4 @@
 const text = document.querySelector('.text');
-console.log(terms);
 const button = document.querySelector('.accept');
 
 function observationCallBack(payback) {
