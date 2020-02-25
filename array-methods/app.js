@@ -19,3 +19,9 @@ console.log(longerThanThreeLetters);
 const randomNumbers = [6, 8, 12, 22, 26, 50, 88];
 const greaterThan25 = randomNumbers.find(number => number > 25);
 console.log(`First number greater than 25: ${greaterThan25}`);
+
+// findIndex - provides the array index of the first element 
+// matching the provided condition
+const names = ['Danny', 'Sophia', 'Dan', 'Emma', 'Joe'];
+const isShorterName = (name) => name.length < 4;
+console.log(names.findIndex(isShorterName));
