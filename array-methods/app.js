@@ -25,3 +25,8 @@ console.log(`First number greater than 25: ${greaterThan25}`);
 const names = ['Danny', 'Sophia', 'Dan', 'Emma', 'Joe'];
 const isShorterName = (name) => name.length < 4;
 console.log(names.findIndex(isShorterName));
+
+// Sort method
+const brands = ['Nike', 'New Balance', 'Apple', 'The North Face', 'LL Bean'];
+const sortedBrands = brands.sort();
+console.log(sortedBrands);
