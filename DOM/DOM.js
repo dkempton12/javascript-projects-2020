@@ -30,9 +30,11 @@ document.body.appendChild(image);
 // Baseball Cards DOM Example
 function createBaseballCard(playerName, position, bats) {
   const html = `
+  <div class="card">
   <p>${playerName}</p>
   <p>${position}</p>
   <p>${bats}</p>
+  </div>
   `;
   return html;
 }
@@ -47,9 +49,7 @@ let cardsHTML = createBaseballCard('Mookie Betts', 'Right Field', 'Bats: Right')
 cardsHTML += createBaseballCard('Mike Trout', 'Center Field', 'Bats: Right');
 cardsHTML += createBaseballCard('Xander Bogaerts', 'Shortstop', 'Bats: Right');
 cardsHTML += createBaseballCard('Rafael Devers', 'Third Base', 'Bats: Left');
-
-baseballCardsDiv.appendChild(cardsHTML);
-
+baseballCardsDiv.innerHTML = cardsHTML;
 
 
 
