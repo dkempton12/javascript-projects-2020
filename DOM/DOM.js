@@ -7,6 +7,9 @@ div.innerHTML = `
 document.body.appendChild(div);
 
 const secondDiv = document.createElement('div');
+// Adding CSS to secondDiv
 secondDiv.style.width = '300';
 secondDiv.style.height = '300';
 secondDiv.style.background = 'orange';
+// Adding .rounded-corners class to secondDiv
+secondDiv.classList.add('rounded-corners');
