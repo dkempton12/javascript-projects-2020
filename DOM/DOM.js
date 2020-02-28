@@ -28,13 +28,18 @@ image.style.marginTop = '25px';
 document.body.appendChild(image);
 
 // Baseball Cards DOM Example
-function createBaseballCards(playerName, position, bats) {
+function createBaseballCard(playerName, position, bats) {
   const html = `
   <p>${playerName}</p>
   <p>${position}</p>
   <p>${bats}</p>
   `;
+  return html;
 }
+
+// Make a baseball cards div to store the cards in
+const baseballCardsDiv = document.createElement('div');
+baseballCardsDiv.classList.add('baseball-cards');
 
 
 
