@@ -19,6 +19,9 @@ document.body.appendChild(secondDiv);
 
 // Creating an image 
 const image = document.createElement('img');
+image.src = 'https://picsum.photos/100';
+image.alt = 'Random, rotating images from Picsum';
+image.classList.add('rounded-corners');
 
 
 
