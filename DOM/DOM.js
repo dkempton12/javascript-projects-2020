@@ -42,6 +42,15 @@ const baseballCardsDiv = document.createElement('div');
 baseballCardsDiv.classList.add('baseball-cards');
 document.body.appendChild(baseballCardsDiv);
 
+// Adding cards to the baseballCardsDiv
+let cardsHTML = createBaseballCard('Mookie Betts', 'Right Field', 'Bats: Right');
+cardsHTML += createBaseballCard('Mike Trout', 'Center Field', 'Bats: Right');
+cardsHTML += createBaseballCard('Xander Bogaerts', 'Shortstop', 'Bats: Right');
+cardsHTML += createBaseballCard('Rafael Devers', 'Third Base', 'Bats: Left');
+
+baseballCardsDiv.appendChild(cardsHTML);
+
+
 
 
 
