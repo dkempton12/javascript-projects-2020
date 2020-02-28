@@ -30,3 +30,7 @@ console.log(names.findIndex(isShorterName));
 const brands = ['Nike', 'New Balance', 'Apple', 'The North Face', 'LL Bean'];
 const sortedBrands = brands.sort();
 console.log(sortedBrands);
+
+// Includes Method - checks if an element is contained in the array - true/false 
+const pets = ['dog', 'cat', 'hamster', 'tortoise'];
+console.log(pets.includes('cat')); 
