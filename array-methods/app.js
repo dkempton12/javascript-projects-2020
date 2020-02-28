@@ -41,3 +41,11 @@ const iterator = letters.entries();
 for (let a of iterator) {
   console.log(a);
 }
+
+// Keys Method example - returns an Array object iterator with the keys 
+// (returns the index of the elements)
+const keys = ['12', '24', '8', '7', '25'];
+const iteratorKeys = keys.keys();
+for (const key of iteratorKeys) {
+  console.log(key);
+}
