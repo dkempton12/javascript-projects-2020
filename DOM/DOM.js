@@ -5,3 +5,8 @@ div.innerHTML = `
 <p>innerHTML paragraph</p>
 `;
 document.body.appendChild(div);
+
+const secondDiv = document.createElement('div');
+secondDiv.style.width = '300';
+secondDiv.style.height = '300';
+secondDiv.style.background = 'orange';
