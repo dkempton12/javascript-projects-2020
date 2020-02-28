@@ -40,6 +40,7 @@ function createBaseballCard(playerName, position, bats) {
 // Make a baseball cards div to store the cards in
 const baseballCardsDiv = document.createElement('div');
 baseballCardsDiv.classList.add('baseball-cards');
+document.body.appendChild(baseballCardsDiv);
 
 
 
