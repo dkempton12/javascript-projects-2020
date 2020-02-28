@@ -34,3 +34,10 @@ console.log(sortedBrands);
 // Includes Method - checks if an element is contained in the array - true/false 
 const pets = ['dog', 'cat', 'hamster', 'tortoise'];
 console.log(pets.includes('cat')); 
+
+// Entries Method - returns array objects with the key / value pairs 
+const letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+const iterator = letters.entries();
+for (let a of iterator) {
+  console.log(a);
+}
