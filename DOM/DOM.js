@@ -5,6 +5,7 @@ div.innerHTML = `
 <p>innerHTML paragraph</p>
 `;
 document.body.appendChild(div);
+div.lastElementChild.textContent = 'Updating text with the lastElementChild property';
 
 // Creating Second Div
 const secondDiv = document.createElement('div');
