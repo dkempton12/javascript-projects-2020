@@ -6,6 +6,7 @@ div.innerHTML = `
 `;
 document.body.appendChild(div);
 
+// Creating Second Div
 const secondDiv = document.createElement('div');
 // Adding CSS to secondDiv
 secondDiv.style.width = '150px';
@@ -13,6 +14,13 @@ secondDiv.style.height = '150px';
 secondDiv.style.background = 'orange';
 // Adding .rounded-corners class to secondDiv
 secondDiv.classList.add('rounded-corners');
-
 // Append secondDiv
 document.body.appendChild(secondDiv);
+
+// Creating an image 
+const image = document.createElement('img');
+
+
+
+
+
