@@ -1,0 +1,1 @@
+Using the **IntersectionObserver API** to display an Accept button once a user scrolls to the end of the document.
