@@ -1,0 +1,1 @@
+Using Javascript to display and hide tabs, by targeting the ARIA labels of the HTML elements
