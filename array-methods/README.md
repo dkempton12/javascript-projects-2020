@@ -1,1 +1,1 @@
-# array-methods
+Common **array method** examples
