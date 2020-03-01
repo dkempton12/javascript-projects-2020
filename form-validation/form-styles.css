@@ -1,0 +1,14 @@
+body {
+  background: lightcoral;
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+form {
+  max-width: 600px;
+}
+
+input {
+  display: block;
+}
