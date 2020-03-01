@@ -1,12 +1,21 @@
 body {
-  background: lightcoral;
+  background:lightseagreen;
   color: #000;
   font-size: 18px;
   line-height: 1.5;
 }
 
+.wrapper {
+  display: grid;
+  justify-content: center;
+}
+
 form {
+  display: grid;
+  justify-content: center;
   max-width: 600px;
+  padding: 1em;
+  background: #fff;
 }
 
 input {
