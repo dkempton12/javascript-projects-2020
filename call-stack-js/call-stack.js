@@ -16,6 +16,6 @@ function firstExample() {
 }
 
 function secondExample() {
-  return firstExample() + `Second example!`;
+  return firstExample() + ` Second example!`;
 }
 secondExample();
