@@ -8,3 +8,14 @@ const multiply = (a, b) => a * b;
 
 // Invocation
 const result = multiply(4, 4);
+
+
+// Another call stack example
+function firstExample() {
+  return `First example!`;
+}
+
+function secondExample() {
+  return firstExample() + `Second example!`;
+}
+secondExample();
