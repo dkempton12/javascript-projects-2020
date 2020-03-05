@@ -1,12 +1,13 @@
-// In this example, the invocation goes to the top of the stack
-// Next, the multiply function is stacked on top and runs in order to complete
-// the function call
-// Lastly, the call is again on top of the stack and is executed
-
 // Function declaration
 const multiply = (a, b) => a * b;
 
-// Invocation
+// Invocation (this is the first invocation)
+// 1) It is first added to the top of the stack,
+// 2) And then the multiply function needs to be executed,
+// therefore the multiply function goes to the top of the stack
+// 3) Multiply function is executed
+// 4) and then the invocation in the result variable is the last
+// in the stack to run
 const result = multiply(4, 4);
 
 // Another call stack example
