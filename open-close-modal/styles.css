@@ -59,11 +59,11 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #282828;
+	background: hsla(50, 100%, 50%, 0.7);
 	/* Hiding modal until button is clicked */
 	opacity: 0;
 	pointer-events: none;
-	transition: opacity 0.4s;
+	transition: opacity 0.2s;
 }
 
 .outer-modal img {
@@ -77,8 +77,8 @@ body {
 
 /* Inner Modal */
 .inner-modal {
-	min-width: 400px;
 	max-width: 600px;
+	min-width: 400px;
 	min-height: 200px;
 	padding: 15px;
 	border-radius: 3px;
@@ -88,6 +88,6 @@ body {
 }
 
 /* This class brings the inner modal into view */
-.modal-outer.open .modal-inner {
+.outer-modal.open .inner-modal {
 	transform: translateY(0);
 }
