@@ -26,3 +26,10 @@ buttons.forEach((button) => button.addEventListener('click', handleButtonClick))
 function closeModal() {
 	outerModal.classList.remove('open');
 }
+
+outerModal.addEventListener('click', function(event) {
+	const isOutside = !event.target.closest('.innerModal');
+	if (isOutside) {
+		outerModal.classList.remove('open');
+	}
+});
