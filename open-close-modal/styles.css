@@ -59,7 +59,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: hsla(50, 100%, 50%, 0.7);
+	background: hsla(90, 100%, 50%, 0.7);
 	/* Hiding modal until button is clicked */
 	opacity: 0;
 	pointer-events: none;
