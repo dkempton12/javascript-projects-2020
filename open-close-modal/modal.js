@@ -22,3 +22,7 @@ function handleButtonClick(event) {
 
 // forEach that will run button clicks
 buttons.forEach((button) => button.addEventListener('click', handleButtonClick));
+
+function closeModal() {
+	outerModal.classList.remove('open');
+}
