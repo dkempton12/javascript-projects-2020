@@ -74,3 +74,20 @@ body {
 	opacity: 1;
 	pointer-events: all;
 }
+
+/* Inner Modal */
+.inner-modal {
+	min-width: 400px;
+	max-width: 600px;
+	min-height: 200px;
+	padding: 15px;
+	border-radius: 3px;
+	background: var(--white);
+	transform: translateY(200%);
+	transition: transform 1s;
+}
+
+/* This class brings the inner modal into view */
+.modal-outer.open .modal-inner {
+	transform: translateY(0);
+}
