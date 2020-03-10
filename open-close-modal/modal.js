@@ -33,3 +33,10 @@ outerModal.addEventListener('click', function(event) {
 		outerModal.classList.remove('open');
 	}
 });
+
+// Adding feature where esc key can be used to close modal
+window.addEventListener('keydown', function() {
+	if (event.key === 'Escape') {
+		outerModal.classList.remove('open');
+	}
+});
