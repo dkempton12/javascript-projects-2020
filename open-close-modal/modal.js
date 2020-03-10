@@ -11,4 +11,14 @@ function handleButtonClick(event) {
 	const imageSrc = card.querySelector('img').src;
 	const description = card.dataset.description;
 	const title = document.querySelector('h2').textContent;
+	// Populate the inner modal with the image info
+	innerModal.innerHTML = `
+  <img src="${imageSrc.replace('200', '600')}" width="400" height="400" alt="${title}">
+  <p>${description}</p>
+  `;
+	// Open modal
+	outerModal.classList.add('open');
 }
+
+// forEach that will run button clicks
+buttons.forEach((button) => button.addEventListener('click', handleButtonClick));
