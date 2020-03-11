@@ -60,10 +60,11 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 9999;
 	background: var(--outer-modal-bg);
 	/* Hiding modal until button is clicked */
-	opacity: 0;
-	pointer-events: none;
+  opacity: 0;
+	pointer-events: none; /* This property causes the browser to ignore events on the element
 	transition: opacity 0.2s;
 }
 
@@ -86,6 +87,7 @@ body {
 	background: var(--white);
 	transform: translateY(200%);
 	transition: transform 1s;
+	z-index: 1;
 }
 
 /* This class brings the inner modal into view */
