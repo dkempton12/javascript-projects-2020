@@ -63,9 +63,9 @@ body {
 	z-index: 9999;
 	background: var(--outer-modal-bg);
 	/* Hiding modal until button is clicked */
-  opacity: 0;
+	opacity: 0;
 	pointer-events: none; /* This property causes the browser to ignore events on the element
-	transition: opacity 0.2s;
+	transition: opacity 0.2s; */
 }
 
 .outer-modal img {
