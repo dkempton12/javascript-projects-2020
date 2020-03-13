@@ -30,7 +30,7 @@ function closeModal() {
 outerModal.addEventListener('click', function(event) {
 	const isOutside = !event.target.closest('.innerModal');
 	if (isOutside) {
-		outerModal.classList.remove('open');
+		closeModal();
 	}
 });
 
