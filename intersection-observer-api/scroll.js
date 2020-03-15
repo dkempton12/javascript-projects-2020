@@ -12,7 +12,7 @@ function observationCallBack(payback) {
 // IntersectionObserver API - takes a root (parent) and threshold ratio
 const ob = new IntersectionObserver(observationCallBack, {
 	root: text,
-	threshold: 1
+	threshold: 1 // Threshold of 1 refers to when the element is 100% visible on the page
 });
 
 ob.observe(text.lastElementChild); // Watching for last element in the text div
