@@ -6,7 +6,9 @@ const button = document.querySelector('.accept');
 function observationCallBack(payback) {
 	if (payback[0].intersectionRatio === 1) {
 		button.disabled = false;
-		ob.unobserve(text.lastElementChild);
+		// ob.unobserve(text.lastElementChild);
+	} else {
+		button.disabled = true;
 	}
 }
 // IntersectionObserver API - takes a root (parent) and threshold ratio
