@@ -28,7 +28,7 @@ function closeModal() {
 }
 
 outerModal.addEventListener('click', function(event) {
-	const isOutside = !event.target.closest('.innerModal');
+	const isOutside = !event.target.closest('.innerModal'); // Meaning that the click is NOT inside of the innerModal
 	if (isOutside) {
 		closeModal();
 	}
