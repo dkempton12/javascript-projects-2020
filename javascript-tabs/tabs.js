@@ -1,10 +1,9 @@
 // Grabbing elements needed
 const tabs = document.querySelector('.tabs');
 const tabButtons = tabs.querySelectorAll('[role="tab"]');
-const tabPanels = tabs.querySelectorAll('[role="tabpanel"]');
+const tabPanels = Array.from(tabs.querySelectorAll('[role="tabpanel"]'));
 
-function handleTabClicks(e) {
-	console.log(e.currentTarget);
+function handleTabClicks(event) {
 	// Hide all tabPanels
 	tabPanels.forEach((panel) => {
 		panel.hidden = true;
@@ -14,7 +13,12 @@ function handleTabClicks(e) {
 		tab.setAttribute('aria-selected', false);
 	});
 	// Mark the clicked tab as selected
-	event.currentTarget('aria-selected', true);
+	event.currentTarget.setAttribute('aria-selected', true);
+	// Find the associated tab panel and show it
+	const { id } = event.currentTarget;
+	// Find the panel where the aria-labelledby is equal to the associated button's 'id'
+	const tabPanel = tabPanels.find((panel) => panel.getAttribute('aria-labelledby') === id);
+	tabPanel.hidden = false;
 }
 
 // Running the events on the button tab clicks
