@@ -1,6 +1,11 @@
 body {
 	font-size: 18px;
 }
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
 .tabs {
 	display: grid;
 }
@@ -19,6 +24,8 @@ body {
 }
 
 button {
+	padding: 10px;
+	border: none;
 	border-radius: 5px 5px 0 0;
 	background: #cdcdcd;
 	color: #282828;
