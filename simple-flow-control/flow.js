@@ -10,4 +10,11 @@ if (age >= 70) {
 	console.log(`You are: ${age} years old!`);
 }
 
-function dashify(sentence, lowercase) {}
+function dashify(sentence, lowercase) {
+	if (lowercase) {
+		// Replace all space instances globally
+		return sentence.replace(/\s/g, '-').toLowerCase();
+	} else {
+		return sentence.replace(/\s/g, '-');
+	}
+}
