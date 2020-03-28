@@ -9,3 +9,5 @@ if (age >= 70) {
 } else {
 	console.log(`You are: ${age} years old!`);
 }
+
+function dashify(sentence, lowercase) {}
