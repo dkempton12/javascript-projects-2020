@@ -6,3 +6,6 @@ if (count === 1) {
 } else {
 	word = `items`;
 }
+
+const sentence = `You have ${count} ${word} in your cart`;
+console.log(sentence);
