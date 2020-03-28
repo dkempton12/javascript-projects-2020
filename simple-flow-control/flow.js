@@ -18,3 +18,12 @@ function dashify(sentence, lowercase) {
 		return sentence.replace(/\s/g, '-');
 	}
 }
+
+function dashifyVersionTwo(sentence, lowercase) {
+	let dashify = sentence.replace(/\s/g, '-');
+	if (lowercase) {
+		return dashify.toLowerCase();
+	}
+	// else
+	return dashify;
+}
