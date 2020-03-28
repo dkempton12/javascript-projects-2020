@@ -27,3 +27,13 @@ function dashifyVersionTwo(sentence, lowercase) {
 	// else
 	return dashify;
 }
+
+// Name example using includes method
+const name = 'Danny';
+const isCoolName = name.includes('Danny' || 'Dan');
+
+if (isCoolName) {
+	return `Wow; ${name} is a COOL name!`;
+} else {
+	console.log('Your name is not as cool....');
+}
