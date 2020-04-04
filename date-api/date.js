@@ -7,3 +7,7 @@ const person = {
 };
 
 const birthday = new Date(person.birthday).getTime();
+
+const now = Date.now();
+
+const age = Math.floor((now - birthday) / 31536000000);
