@@ -5,3 +5,5 @@ const person = {
 		lastName: 'Greenberg'
 	}
 };
+
+const birthday = new Date(person.birthday).getTime();
