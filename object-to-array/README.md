@@ -1,0 +1,1 @@
+**Function** that simply grabs values from an object and uses the **filter** method to implicitly return quantities greater than 3,000.
