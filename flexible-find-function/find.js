@@ -13,3 +13,6 @@ function findPlayer(prop, propValue) {
 		return (player[prop] = propValue);
 	};
 }
+
+const searchForCelticsPlayer = celtics.find(findPlayer('position', 'Point Guard'));
+console.log(searchForCelticsPlayer);
