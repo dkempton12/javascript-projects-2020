@@ -8,4 +8,8 @@ const celtics = [
 	{ name: 'Daniel Theis', position: 'Center', jerseyNumber: '27' }
 ];
 
-function findPlayer(prop, propValue) {}
+function findPlayer(prop, propValue) {
+	return function(player) {
+		return (player[prop] = propValue);
+	};
+}
