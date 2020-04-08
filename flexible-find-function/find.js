@@ -7,3 +7,5 @@ const celtics = [
 	{ name: 'Enes Kanter', position: 'Forward', jerseyNumber: '11' },
 	{ name: 'Daniel Theis', position: 'Center', jerseyNumber: '27' }
 ];
+
+function findPlayer(prop, propValue) {}
