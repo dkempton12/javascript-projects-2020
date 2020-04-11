@@ -544,3 +544,7 @@ function instanceCounterReducer(count, char) {
 
 const textResult = text.split('').filter(isValidCharacter).map(lowercase).filter(instanceCounterReducer, {});
 console.log(textResult);
+
+// Sort results based on most instances
+
+const sortedCharacters = Object.entries(textResult).sort(sortByValue);
