@@ -534,8 +534,13 @@ function isValidCharacter(char) {
 }
 
 function lowercase(char) {
-	return char.toLowercase();
+	return char.toLowerCase();
 }
 
-const textResult = text.split('').filter(isValidCharacter).map(lowercase);
+function instanceCounterReducer(count, char) {
+	count[char] ? (count[char] = count[char] + 1) : (count[char] = 1);
+	return count;
+}
+
+const textResult = text.split('').filter(isValidCharacter).map(lowercase).filter(instanceCounterReducer, {});
 console.log(textResult);
