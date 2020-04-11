@@ -533,5 +533,9 @@ function isValidCharacter(char) {
 	return char.match(/[a-z0-9]/i);
 }
 
-const textResult = text.split('').filter(isValidCharacter);
+function lowercase(char) {
+	return char.toLowercase();
+}
+
+const textResult = text.split('').filter(isValidCharacter).map(lowercase);
 console.log(textResult);
