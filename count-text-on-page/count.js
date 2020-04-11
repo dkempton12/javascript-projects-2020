@@ -529,5 +529,9 @@ TermsPrivacyCookies
 © 2005-2020 Mozilla and individual contributors.Content is available under these licenses.
 `;
 
-const textResult = text.split('');
+function isValidCharacter(char) {
+	return char.match(/[a-z0-9]/i);
+}
+
+const textResult = text.split('').filter(isValidCharacter);
 console.log(textResult);
