@@ -530,3 +530,4 @@ TermsPrivacyCookies
 `;
 
 const textResult = text.split('');
+console.log(textResult);
