@@ -528,3 +528,5 @@ Firefox
 TermsPrivacyCookies
 © 2005-2020 Mozilla and individual contributors.Content is available under these licenses.
 `;
+
+const textResult = text.split('');
