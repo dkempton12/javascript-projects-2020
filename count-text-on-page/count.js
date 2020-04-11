@@ -542,9 +542,12 @@ function instanceCounterReducer(count, char) {
 	return count;
 }
 
-const textResult = text.split('').filter(isValidCharacter).map(lowercase).filter(instanceCounterReducer, {});
+const textResult = text.split('').filter(isValidCharacter).map(lowercase).reduce(instanceCounterReducer, {});
 console.log(textResult);
 
 // Sort results based on most instances
-
-const sortedCharacters = Object.entries(textResult).sort(sortByValue);
+function sortCharacters(a, b) {
+	return a[1] - b[1];
+}
+const sortedCharacters = Object.entries(textResult).sort(sortCharacters);
+console.log(sortedCharacters);
