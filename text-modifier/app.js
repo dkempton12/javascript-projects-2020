@@ -85,8 +85,12 @@ const filters = {
 
 	funky(letter) {
 		// check if there is a funky letter for this case
+		let funkyLetter = funkyLetters[letter]; // looking up to the funkyLetters object
+		if (funkyLetter) return funkyLetter;
 		// if there is not, check if there is a lowercase version
+		funkyLetter = funkyLetters[letter.toLowerCase()];
 		// if there is nothing, return the regular letter
+		return letter;
 	},
 
 	unstructured() {}
