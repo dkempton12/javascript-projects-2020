@@ -1,0 +1,12 @@
+body {
+	background: dodgerblue;
+}
+
+.text-modifier {
+	max-width: 600px;
+	background: #fff;
+}
+
+label {
+	display: block;
+}
