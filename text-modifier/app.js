@@ -5,7 +5,13 @@ const filterInputs = Array.from(document.querySelectorAll('[name="filter"]'));
 
 // Object that contains the filter methods for transforming text
 const filters = {
-	sarcastic() {},
+	sarcastic(letter, index) {
+		if (index % 2) {
+			return letter.toUpperCase();
+		} else {
+			return letter.toLowerCase();
+		}
+	},
 
 	funky() {},
 
