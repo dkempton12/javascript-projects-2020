@@ -119,3 +119,10 @@ function transformText(text) {
 
 // Listening for text value events in the textarea input
 textArea.addEventListener('input', (event) => transformText(event.target.value));
+
+// This is for toggling the different filters for text in the textarea
+filterInputs.forEach((input) =>
+	input.addEventListener('input', () => {
+		transformText(textArea.value);
+	})
+);
