@@ -89,6 +89,7 @@ const filters = {
 		if (funkyLetter) return funkyLetter;
 		// if there is not, check if there is a lowercase version
 		funkyLetter = funkyLetters[letter.toLowerCase()];
+		if (funkyLetter) return funkyLetter;
 		// if there is nothing, return the regular letter
 		return letter;
 	},
