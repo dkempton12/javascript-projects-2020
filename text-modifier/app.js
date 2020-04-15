@@ -19,6 +19,8 @@ function transformText(text) {
 
 	// Looping over each letter that is typed into the textarea
 	const modifyText = Array.from(text).map(filters[filter]); // Filter lookup that looks up to the filter methods
+	// Setting the result paragraph's textContent property - joining the modified text
+	result.textContent = modifyText.join('');
 }
 
 // Listening for text value events in the textarea input
