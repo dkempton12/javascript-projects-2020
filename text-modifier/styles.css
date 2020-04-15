@@ -3,10 +3,22 @@ body {
 }
 
 .text-modifier {
-	max-width: 600px;
+	margin: 0 auto;
 	background: #fff;
+	max-width: 500px;
+	padding: 2rem;
+	padding: 2rem;
+	border-radius: 3px;
+	display: grid;
 }
 
 label {
 	display: block;
+}
+
+.text {
+	display: block;
+	padding: 1rem;
+	border: 1px solid gray;
+	overflow: auto;
 }
