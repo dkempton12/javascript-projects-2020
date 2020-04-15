@@ -83,7 +83,11 @@ const filters = {
 		}
 	},
 
-	funky() {},
+	funky(letter) {
+		// check if there is a funky letter for this case
+		// if there is not, check if there is a lowercase version
+		// if there is nothing, return the regular letter
+	},
 
 	unstructured() {}
 };
