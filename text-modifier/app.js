@@ -94,7 +94,16 @@ const filters = {
 		return letter;
 	},
 
-	unstructured() {}
+	randomSpaces(letter) {
+		let random = Math.floor(Math.random() * 3);
+		// for each space between words, there's a 1 in 3 chance of adding ... between them
+		if (letter === ' ' && random === 2) {
+			// random is referring to the number of spaces the above random function generates
+			return '...';
+		} else {
+			return letter;
+		}
+	}
 };
 
 // Function that filters the text
