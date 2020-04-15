@@ -16,6 +16,9 @@ const filters = {
 function transformText(text) {
 	const filter = filterInputs.find((input) => input.checked).value;
 	console.log(filter);
+
+	// Looping over each letter that is typed into the textarea
+	const modifyText = Array.from(text).map(filters[filter]); // Filter lookup that looks up to the filter methods
 }
 
 // Listening for text value events in the textarea input
