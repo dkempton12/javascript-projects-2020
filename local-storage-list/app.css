@@ -1,0 +1,14 @@
+body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: #4e54c8; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#4e54c8,
+		#8f94fb
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
