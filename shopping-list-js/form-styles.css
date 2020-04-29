@@ -1,14 +1,17 @@
 body {
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: start;
 	font-family: sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 }
 
 .shopping-list {
-	height: 100vh;
 	display: grid;
-	justify-content: center;
-	align-items: center;
+	grid-template-columns: 1fr auto;
+	padding: 3rem;
 }
 
 input[type="text"],
