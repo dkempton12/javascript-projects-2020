@@ -35,18 +35,19 @@ button {
 input[type="text"] {
 	margin-right: -4px;
 	border: 1px solid #ededed;
+	outline-color: #7f00ff;
 }
 
 button[type="submit"] {
 	padding: 0.7rem 1.2rem;
-	border: 1px solid mediumblue;
+	border: 1px solid #7f00ff;
 	/* border-radius: 3px; */
-	background: mediumblue;
+	background: #7f00ff;
 	color: #fff;
 	cursor: pointer;
 }
 
 button[type="submit"]:hover {
 	transition: 0.6s ease;
-	background: navy;
+	background: #660198;
 }
