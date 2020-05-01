@@ -71,3 +71,13 @@ button[type="submit"]:hover {
 	grid-gap: 1rem;
 	border-bottom: 1px solid #ededed;
 }
+
+/* Delete button */
+.list-item button {
+	border: none;
+	font-size: 22px;
+	font-weight: 700;
+	background: none;
+	color: orangered;
+	cursor: pointer;
+}
