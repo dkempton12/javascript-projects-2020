@@ -21,6 +21,8 @@ function handleSubmit(event) {
 	console.log(item);
 	// Push added items into the items array
 	items.push(item);
+	// Reset the form after each item is submitted
+	event.target.reset();
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
