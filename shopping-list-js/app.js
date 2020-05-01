@@ -28,13 +28,15 @@ function handleSubmit(event) {
 }
 
 function displayItems() {
-	const html = items.map((item) => {
-		return `<li class="list-item">
+	const html = items
+		.map((item) => {
+			return `<li class="list-item">
       <input type="checkbox" value="${item.id}">
       <span class="itemName">${item.name}</span>
       <button>&times;</button>
     </li>`;
-	});
+		})
+		.join('');
 	list.innerHTML = html;
 }
 
