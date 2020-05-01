@@ -12,7 +12,7 @@ body {
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 300;
 }
 
@@ -70,6 +70,7 @@ button[type="submit"]:hover {
 	align-items: center;
 	grid-gap: 1rem;
 	border-bottom: 1px solid #ededed;
+	font-size: 18px;
 }
 
 /* Delete button */
