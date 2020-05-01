@@ -11,6 +11,14 @@ function handleSubmit(event) {
 	event.preventDefault();
 	const name = event.currentTarget.item.value;
 	if (!name) return;
+
+	// create an object to store item data for each item added
+	const item = {
+		name,
+		id: Date.now(),
+		completed: false
+	};
+	console.log(item);
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
