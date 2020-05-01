@@ -8,7 +8,9 @@ let items = [];
 
 // Function to handle the button submit events
 function handleSubmit(event) {
-	console.log(event);
+	event.preventDefault();
+	const name = event.currentTarget.item.value;
+	console.log(name);
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
