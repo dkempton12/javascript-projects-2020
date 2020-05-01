@@ -10,7 +10,7 @@ let items = [];
 function handleSubmit(event) {
 	event.preventDefault();
 	const name = event.currentTarget.item.value;
-	console.log(name);
+	if (!name) return;
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
