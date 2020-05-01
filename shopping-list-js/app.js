@@ -27,7 +27,8 @@ function handleSubmit(event) {
 
 function displayItems() {
 	const html = items.map((item) => {
-		console.log(item);
+		return `<li class="shopping-item">
+    </li>`;
 	});
 }
 
