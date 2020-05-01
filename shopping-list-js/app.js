@@ -19,6 +19,8 @@ function handleSubmit(event) {
 		completed: false
 	};
 	console.log(item);
+	// Push added items into the items array
+	items.push(item);
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
