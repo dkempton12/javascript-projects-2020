@@ -53,4 +53,9 @@ button[type="submit"]:hover {
 }
 
 .list-item {
+	padding: 1rem 0;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	grid-gap: 1rem;
+	border-bottom: 1px solid #ededed;
 }
