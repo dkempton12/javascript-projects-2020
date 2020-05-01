@@ -25,4 +25,10 @@ function handleSubmit(event) {
 	event.target.reset();
 }
 
+function displayItems() {
+	const html = items.map((item) => {
+		console.log(item);
+	});
+}
+
 shoppingForm.addEventListener('submit', handleSubmit);
