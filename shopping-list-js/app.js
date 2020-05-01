@@ -10,3 +10,5 @@ let items = [];
 function handleSubmit(event) {
 	console.log(event);
 }
+
+shoppingForm.addEventListener('submit', handleSubmit);
