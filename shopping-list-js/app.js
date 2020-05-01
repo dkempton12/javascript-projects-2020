@@ -23,6 +23,8 @@ function handleSubmit(event) {
 	items.push(item);
 	// Reset the form after each item is submitted
 	event.target.reset();
+	// run displayItems() initially
+	displayItems();
 }
 
 function displayItems() {
@@ -33,6 +35,7 @@ function displayItems() {
       <button>&times;</button>
     </li>`;
 	});
+	list.innerHTML = html;
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
