@@ -17,12 +17,16 @@ body {
 }
 
 .shopping-list {
-	display: grid;
-	grid-template-columns: 1fr auto;
+	max-width: 500px;
 	margin-top: 2rem;
 	padding: 3rem;
 	border-radius: 3px;
 	background: #fff;
+}
+
+.shopping {
+	display: grid;
+	grid-template-columns: 1fr auto;
 }
 
 input[type="text"],
@@ -56,6 +60,7 @@ button[type="submit"]:hover {
 	padding: 1rem 0;
 	display: grid;
 	grid-template-columns: auto 1fr auto;
+	align-items: center;
 	grid-gap: 1rem;
 	border-bottom: 1px solid #ededed;
 }
