@@ -40,5 +40,10 @@ function displayItems() {
 	list.innerHTML = html;
 }
 
+function mirrorToLocalStorage() {
+	// Mirroring data to localStorage with JSON.stringify
+	localStorage.setItem('items', JSON.stringify(items));
+}
+
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
