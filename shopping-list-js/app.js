@@ -23,8 +23,8 @@ function handleSubmit(event) {
 	items.push(item);
 	// Reset the form after each item is submitted
 	event.target.reset();
-	// run displayItems() initially
-	displayItems();
+	// run a Custom Event for displaying items
+	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
 function displayItems() {
@@ -41,3 +41,4 @@ function displayItems() {
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
+list.addEventListener('itemsUpdated', displayItems);
