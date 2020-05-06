@@ -45,6 +45,11 @@ function mirrorToLocalStorage() {
 	localStorage.setItem('items', JSON.stringify(items));
 }
 
+// Need a function to maintain (preserve) the data in localStorage
+function restoreLocalStorage() {
+	const localStorageItems = JSON.parse(localStorage.getItem('items'));
+}
+
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
 list.addEventListener('itemsUpdated', mirrorToLocalStorage);
