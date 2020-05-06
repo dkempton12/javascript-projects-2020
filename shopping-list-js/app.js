@@ -51,6 +51,8 @@ function restoreLocalStorage() {
 	if (localStorageItems.length) {
 		items.push(...localStorageItems);
 	}
+	// run the itemsUpdated CustomEvent when items are updated
+	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
