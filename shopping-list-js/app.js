@@ -57,6 +57,8 @@ function restoreLocalStorage() {
 
 function deleteItem(id) {
 	items = items.filter((item) => item.id !== id);
+	// again, run the itemsUpdated CustomEvent when items are updated (Deleted)
+	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
