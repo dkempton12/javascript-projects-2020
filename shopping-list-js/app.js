@@ -60,5 +60,11 @@ function deleteItem(id) {}
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
 list.addEventListener('itemsUpdated', mirrorToLocalStorage);
+list.addEventListener('click', function(event) {
+	const id = parseInt(event.target.value);
+	if (event.target.matches('button')) {
+		deleteItem(id);
+	}
+});
 
 restoreLocalStorage();
