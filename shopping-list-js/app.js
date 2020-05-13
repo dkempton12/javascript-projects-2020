@@ -33,7 +33,7 @@ function displayItems() {
 			return `<li class="list-item">
       <input type="checkbox" value="${item.id}">
       <span class="itemName">${item.name}</span>
-      <button>&times;</button>
+      <button value="${item.id}" aria-label="Remove ${item.name}">&times;</button>
     </li>`;
 		})
 		.join('');
@@ -60,6 +60,8 @@ function deleteItem(id) {
 	// again, run the itemsUpdated CustomEvent when items are updated (Deleted)
 	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
+
+function markItemAsCompleted(id) {}
 
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
