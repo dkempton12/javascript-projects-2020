@@ -61,7 +61,10 @@ function deleteItem(id) {
 	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
-function markItemAsCompleted(id) {}
+function markItemAsCompleted(id) {
+	const itemReference = items.find((item) => item.id === id);
+	console.log(itemReference);
+}
 
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
