@@ -16,7 +16,7 @@ function handleSubmit(event) {
 	const item = {
 		name,
 		id: Date.now(),
-		completed: false
+		complete: false
 	};
 	console.log(item);
 	// Push added items into the items array
@@ -64,7 +64,7 @@ function deleteItem(id) {
 function markItemAsCompleted(id) {
 	const itemReference = items.find((item) => item.id === id);
 	console.log(itemReference);
-	itemReference.completed = !itemReference.completed;
+	itemReference.complete = !itemReference.complete;
 	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
