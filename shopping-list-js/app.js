@@ -64,6 +64,7 @@ function deleteItem(id) {
 function markItemAsCompleted(id) {
 	const itemReference = items.find((item) => item.id === id);
 	console.log(itemReference);
+	itemReference.completed = !itemReference.completed;
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
