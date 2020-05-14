@@ -65,6 +65,7 @@ function markItemAsCompleted(id) {
 	const itemReference = items.find((item) => item.id === id);
 	console.log(itemReference);
 	itemReference.completed = !itemReference.completed;
+	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
 shoppingForm.addEventListener('submit', handleSubmit);
