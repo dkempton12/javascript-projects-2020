@@ -74,6 +74,9 @@ list.addEventListener('click', function(event) {
 	if (event.target.matches('button')) {
 		deleteItem(id);
 	}
+	if (event.target.matches('input[type="checkbox"]')) {
+		markItemAsCompleted(id);
+	}
 });
 
 restoreLocalStorage();
