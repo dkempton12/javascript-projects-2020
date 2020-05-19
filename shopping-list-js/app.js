@@ -71,6 +71,7 @@ function markItemAsCompleted(id) {
 shoppingForm.addEventListener('submit', handleSubmit);
 list.addEventListener('itemsUpdated', displayItems);
 list.addEventListener('itemsUpdated', mirrorToLocalStorage);
+// REMINDER: only listening IF an item(s) has been added
 list.addEventListener('click', function(event) {
 	const id = parseInt(event.target.value);
 	if (event.target.matches('button')) {
