@@ -62,9 +62,9 @@ function deleteItem(id) {
 }
 
 function markItemAsCompleted(id) {
-	const itemReference = items.find((item) => item.id === id);
-	console.log(itemReference);
-	itemReference.complete = !itemReference.complete;
+	const itemToMarkOff = items.find((item) => item.id === id);
+	console.log(itemToMarkOff);
+	itemToMarkOff.complete = !itemToMarkOff.complete;
 	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
