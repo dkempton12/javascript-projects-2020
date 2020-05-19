@@ -74,6 +74,7 @@ list.addEventListener('itemsUpdated', mirrorToLocalStorage);
 // REMINDER: only listening IF an item(s) has been added
 list.addEventListener('click', function(event) {
 	const id = parseInt(event.target.value);
+	// target - actual thing you're clicking on - and the <ul> is the currentTarget
 	if (event.target.matches('button')) {
 		deleteItem(id);
 	}
