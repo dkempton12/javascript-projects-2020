@@ -31,7 +31,7 @@ function displayItems() {
 	const html = items
 		.map((item) => {
 			return `<li class="list-item">
-      <input type="checkbox" value="${item.id}" ${item.complete && 'checked'}>
+      <input type="checkbox" value="${item.id}" ${item.complete ? 'checked' : ''}>
       <span class="itemName">${item.name}</span>
       <button value="${item.id}" aria-label="Remove ${item.name}">&times;</button>
     </li>`;
