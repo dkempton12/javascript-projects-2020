@@ -37,3 +37,15 @@
 	pointer-events: none;
 	transition: opacity 0.5s;
 }
+
+.inner-modal {
+	max-width: 600px;
+	transform: translateY(-100vh);
+	transition: all 0.5s;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+	display: grid;
+	/* For display of prev button / figure / next button */
+	grid-template-columns: 50px 1fr 50px;
+}
