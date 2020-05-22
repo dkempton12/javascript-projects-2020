@@ -39,8 +39,6 @@
 }
 
 .inner-modal {
-	max-width: 600px;
-	height: calc(100vh -100px);
 	margin: 3rem;
 	/* transform: translateY(-100vh); */
 	transition: all 0.5s;
@@ -53,10 +51,7 @@
 }
 
 .modal figure {
-	height: 100%;
-	margin: 0;
-	display: grid;
-	grid-template-rows: 1fr auto;
+	padding: 1rem;
 }
 
 .modal img {
