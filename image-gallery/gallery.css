@@ -1,0 +1,16 @@
+.galleries {
+	display: grid;
+	/* align-items: center; */
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+.gallery {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
