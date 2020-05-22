@@ -27,7 +27,7 @@ function handleSubmit(event) {
 	list.dispatchEvent(new CustomEvent('itemsUpdated'));
 }
 
-function DisplayItems() {
+function displayItems() {
 	const html = items
 		.map((item) => {
 			return `<li class="list-item">
