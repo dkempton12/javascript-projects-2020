@@ -33,14 +33,16 @@
 	justify-content: center;
 	align-items: center;
 	background: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	pointer-events: none;
+	/* opacity: 0;
+	pointer-events: none; */
 	transition: opacity 0.5s;
 }
 
 .inner-modal {
 	max-width: 600px;
-	transform: translateY(-100vh);
+	height: calc(100vh -100px);
+	margin: 3rem;
+	/* transform: translateY(-100vh); */
 	transition: all 0.5s;
 	border-radius: 3px;
 	background: #fff;
@@ -48,4 +50,21 @@
 	display: grid;
 	/* For display of prev button / figure / next button */
 	grid-template-columns: 50px 1fr 50px;
+}
+
+.modal figure {
+	height: 100%;
+	margin: 0;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+.modal img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.modal figcaption {
+	padding: 10px;
 }
