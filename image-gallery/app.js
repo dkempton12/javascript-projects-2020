@@ -26,11 +26,18 @@ function Gallery(gallery) {
 		modal.querySelector('h2').textContent = element.title;
 		// img caption
 		modal.querySelector('p').textContent = element.dataset.description;
+
+		// set currentImage variable equal to img element being passed in
+		currentImage = element;
+		// run openModal
+		openModal();
 	}
-	// set currentImage variable equal to img element being passed in
-	currentImage = element;
-	// run openModal
-	openModal();
+
+	images.forEach((image) =>
+		image.addEventListener('click', function(event) {
+			showImage(event.target);
+		})
+	);
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
