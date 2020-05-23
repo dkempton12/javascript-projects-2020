@@ -15,6 +15,7 @@ function Gallery(gallery) {
 		if (modal.matches('.open')) {
 			console.info('Modal is already open!');
 		}
+		modal.classList.add('open');
 	}
 }
 
