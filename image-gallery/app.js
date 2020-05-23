@@ -10,6 +10,12 @@ function Gallery(gallery) {
 	const nextButton = modal.querySelector('.next');
 	// declare current image you're targeting in the gallery
 	let currentImage;
+
+	function openModal() {
+		if (modal.matches('.open')) {
+			console.info('Modal is already open!');
+		}
+	}
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
