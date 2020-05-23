@@ -27,6 +27,8 @@ function Gallery(gallery) {
 		// img caption
 		modal.querySelector('p').textContent = element.dataset.description;
 	}
+	// set currentImage variable equal to img element being passed in
+	currentImage = element;
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
