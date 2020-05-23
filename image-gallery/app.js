@@ -17,6 +17,16 @@ function Gallery(gallery) {
 		}
 		modal.classList.add('open');
 	}
+
+	function showImage(element) {
+		// show image data in the modal
+		// img
+		modal.querySelector('img').src = element.src;
+		// img title
+		modal.querySelector('h2').textContent = element.title;
+		// img caption
+		modal.querySelector('p').textContent = element.dataset.description;
+	}
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
