@@ -29,6 +29,8 @@ function Gallery(gallery) {
 	}
 	// set currentImage variable equal to img element being passed in
 	currentImage = element;
+	// run openModal
+	openModal();
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
