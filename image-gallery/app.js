@@ -48,6 +48,8 @@ function Gallery(gallery) {
 			showImage(event.target);
 		})
 	);
+
+	modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
