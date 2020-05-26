@@ -18,6 +18,10 @@ function Gallery(gallery) {
 		modal.classList.add('open');
 	}
 
+	function closeModal() {
+		modal.classList.remove('open');
+	}
+
 	function showImage(element) {
 		// show image data in the modal
 		// img
