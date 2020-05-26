@@ -47,6 +47,10 @@ function Gallery(gallery) {
 		showImage(currentImage.nextElementSibling || gallery.firstElementChild);
 	}
 
+	function showPreviousImage() {
+		showImage(currentImage.previousElementSibling || gallery.lastElementChild);
+	}
+
 	function showImage(element) {
 		// show image data in the modal
 		// img
