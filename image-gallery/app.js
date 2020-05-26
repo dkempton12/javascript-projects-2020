@@ -34,6 +34,13 @@ function Gallery(gallery) {
 		if (event.key === 'Escape') {
 			closeModal();
 		}
+		if (event.key === 'ArrowRight') {
+			return showNextImage();
+		}
+
+		if (event.key === 'ArrowLeft') {
+			return showPreviousImage();
+		}
 	}
 
 	function showImage(element) {
