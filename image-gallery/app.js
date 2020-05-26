@@ -16,10 +16,12 @@ function Gallery(gallery) {
 			console.info('Modal is already open!');
 		}
 		modal.classList.add('open');
+		modal.addEventListener('keyup', handleKeyUps);
 	}
 
 	function closeModal() {
 		modal.classList.remove('open');
+		modal.addEventListener('keyup', handleKeyUps);
 	}
 
 	function closeModalWhenClickIsOutsideInnerModal(event) {
