@@ -17,11 +17,15 @@ function Gallery(gallery) {
 		}
 		modal.classList.add('open');
 		window.addEventListener('keyup', handleKeyUps);
+		nextButton.addEventListener('click', showNextImage);
+		previousButton.addEventListener('click', showPreviousImage);
 	}
 
 	function closeModal() {
 		modal.classList.remove('open');
 		window.removeEventListener('keyup', handleKeyUps);
+		nextButton.removeEventListener('click', showNextImage);
+		previousButton.removeEventListener('click', showPreviousImage);
 	}
 
 	function closeModalWhenClickIsOutsideInnerModal(event) {
