@@ -28,6 +28,12 @@ function Gallery(gallery) {
 		}
 	}
 
+	function handleKeyUps(event) {
+		if (event.key === 'Escape') {
+			closeModal();
+		}
+	}
+
 	function showImage(element) {
 		// show image data in the modal
 		// img
