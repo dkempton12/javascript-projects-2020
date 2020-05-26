@@ -32,7 +32,7 @@ function Gallery(gallery) {
 
 	function handleKeyUps(event) {
 		if (event.key === 'Escape') {
-			closeModal();
+			return closeModal();
 		}
 		if (event.key === 'ArrowRight') {
 			return showNextImage();
@@ -41,6 +41,10 @@ function Gallery(gallery) {
 		if (event.key === 'ArrowLeft') {
 			return showPreviousImage();
 		}
+	}
+
+	function showNextImage() {
+		showImage(currentImage.nextElementSibling || gallery.firstElementChild);
 	}
 
 	function showImage(element) {
