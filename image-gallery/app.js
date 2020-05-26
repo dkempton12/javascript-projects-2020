@@ -22,6 +22,12 @@ function Gallery(gallery) {
 		modal.classList.remove('open');
 	}
 
+	function closeModalWhenClickIsOutsideInnerModal(event) {
+		if (event.target === event.currentTarget) {
+			closeModal();
+		}
+	}
+
 	function showImage(element) {
 		// show image data in the modal
 		// img
