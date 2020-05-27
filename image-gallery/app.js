@@ -76,6 +76,14 @@ function Gallery(gallery) {
 		})
 	);
 
+	images.forEach((image) =>
+		image.addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				showImage(event.target);
+			}
+		})
+	);
+
 	modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
 }
 
