@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background: #0575e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #021b79, #0575e6); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#021b79,
+		#0575e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.galleries {
+	display: grid;
+	/* align-items: center; */
+	grid-template-columns: 1fr;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding: 2rem;
+}
+
+.gallery {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	align-items: stretch;
+}
+
+.gallery img {
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s;
+}
+
+.inner-modal {
+	margin: 3rem;
+	/* transform: translateY(-100vh); */
+	transition: all 0.5s;
+	border-radius: 3px;
+	background: #fff;
+	box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+	display: grid;
+	/* For display of prev button / figure / next button */
+	grid-template-columns: 50px 1fr 50px;
+}
+
+.modal figure {
+	padding: 2rem;
+}
+
+.modal img {
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+}
+
+.modal figcaption {
+	padding: 10px;
+}
+
+.modal button {
+	padding: 0.5rem;
+	background: blue;
+	border: none;
+	color: #fff;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.modal.open {
+	pointer-events: all;
+	opacity: 1;
+}
+
+.modal.open .inner-modal {
+	transform: translateY(0);
+}
