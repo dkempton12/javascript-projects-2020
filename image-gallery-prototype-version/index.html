@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <section class="galleries">
+    <div class="gallery">
+      <img src="https://picsum.photos/200" alt="Random Picture" tabindex="0" title="Image Title" data-description="Image description">
+      <img src="https://picsum.photos/200" alt="Random Picture" tabindex="0" title="Image Title 2" data-description="Image description">
+      <img src="https://picsum.photos/200" alt="Random Picture" tabindex="0" title="Image Title 3" data-description="Image description">
+      <img src="https://picsum.photos/200" alt="Random Picture" tabindex="0" title="Image Title 4" data-description="Image description">
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="inner-modal">
+      <button class="previous" aria-label="Previous Image">←</button>
+      <figure>
+        <img src="https://picsum.photos/200" alt="Random Picture">
+        <figcaption>
+          <h2>Test Title</h2>
+          <p>Test Sub headline</p>
+        </figcaption>
+      </figure>
+      <button class="next" aria-label="Next Image">→</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
