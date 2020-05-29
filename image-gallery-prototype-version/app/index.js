@@ -4,28 +4,26 @@ function Gallery(gallery) {
 	}
 
 	// select elements
-	const images = Array.from(gallery.querySelectorAll('img'));
-	const modal = document.querySelector('.modal');
-	const previousButton = modal.querySelector('.previous');
-	const nextButton = modal.querySelector('.next');
-	// declare current image you're targeting in the gallery
-	let currentImage;
+	this.images = Array.from(gallery.querySelectorAll('img'));
+	this.modal = document.querySelector('.modal');
+	this.previousButton = this.modal.querySelector('.previous');
+	this.nextButton = this.modal.querySelector('.next');
 
 	function openModal() {
-		if (modal.matches('.open')) {
+		if (this.modal.matches('.open')) {
 			console.info('Modal is already open!');
 		}
-		modal.classList.add('open');
+		this.modal.classList.add('open');
 		window.addEventListener('keyup', handleKeyUps);
-		nextButton.addEventListener('click', showNextImage);
-		previousButton.addEventListener('click', showPreviousImage);
+		this.nextButton.addEventListener('click', showNextImage);
+		this.previousButton.addEventListener('click', showPreviousImage);
 	}
 
 	function closeModal() {
-		modal.classList.remove('open');
+		this.modal.classList.remove('open');
 		window.removeEventListener('keyup', handleKeyUps);
-		nextButton.removeEventListener('click', showNextImage);
-		previousButton.removeEventListener('click', showPreviousImage);
+		this.nextButton.removeEventListener('click', showNextImage);
+		this.previousButton.removeEventListener('click', showPreviousImage);
 	}
 
 	function closeModalWhenClickIsOutsideInnerModal(event) {
@@ -58,11 +56,11 @@ function Gallery(gallery) {
 	function showImage(element) {
 		// show image data in the modal
 		// img
-		modal.querySelector('img').src = element.src;
+		this.modal.querySelector('img').src = element.src;
 		// img title
-		modal.querySelector('h2').textContent = element.title;
+		this.modal.querySelector('h2').textContent = element.title;
 		// img caption
-		modal.querySelector('p').textContent = element.dataset.description;
+		this.modal.querySelector('p').textContent = element.dataset.description;
 
 		// set currentImage variable equal to img element being passed in
 		currentImage = element;
@@ -70,13 +68,13 @@ function Gallery(gallery) {
 		openModal();
 	}
 
-	images.forEach((image) =>
+	this.images.forEach((image) =>
 		image.addEventListener('click', function(event) {
 			showImage(event.target);
 		})
 	);
 
-	images.forEach((image) =>
+	this.images.forEach((image) =>
 		image.addEventListener('keyup', function(event) {
 			if (event.key === 'Enter') {
 				showImage(event.target);
@@ -84,7 +82,7 @@ function Gallery(gallery) {
 		})
 	);
 
-	modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
+	this.modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
 }
 
 const gallery = Gallery(document.querySelector('.gallery'));
