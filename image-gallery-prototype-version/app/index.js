@@ -63,11 +63,11 @@ Gallery.prototype.handleKeyUps = function(event) {
 };
 
 Gallery.prototype.showNextImage = function() {
-	this.showImage(currentImage.nextElementSibling || gallery.firstElementChild);
+	this.showImage(this.currentImage.nextElementSibling || this.gallery.firstElementChild);
 };
 
 Gallery.prototype.showPreviousImage = function() {
-	this.showImage(currentImage.previousElementSibling || gallery.lastElementChild);
+	this.showImage(this.currentImage.previousElementSibling || this.gallery.lastElementChild);
 };
 
 Gallery.prototype.showImage = function(element) {
