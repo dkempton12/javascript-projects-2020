@@ -11,14 +11,14 @@ function Gallery(gallery) {
 
 	this.images.forEach((image) =>
 		image.addEventListener('click', function(event) {
-			showImage(event.target);
+			this.showImage(event.target);
 		})
 	);
 
 	this.images.forEach((image) =>
 		image.addEventListener('keyup', function(event) {
 			if (event.key === 'Enter') {
-				showImage(event.target);
+				this.showImage(event.target);
 			}
 		})
 	);
@@ -45,29 +45,29 @@ Gallery.prototype.closeModal = function() {
 
 Gallery.prototype.closeModalWhenClickIsOutsideInnerModal = function(event) {
 	if (event.target === event.currentTarget) {
-		closeModal();
+		this.closeModal();
 	}
 };
 
 Gallery.prototype.handleKeyUps = function(event) {
 	if (event.key === 'Escape') {
-		return closeModal();
+		return this.closeModal();
 	}
 	if (event.key === 'ArrowRight') {
-		return showNextImage();
+		return this.showNextImage();
 	}
 
 	if (event.key === 'ArrowLeft') {
-		return showPreviousImage();
+		return this.showPreviousImage();
 	}
 };
 
 Gallery.prototype.showNextImage = function() {
-	showImage(currentImage.nextElementSibling || gallery.firstElementChild);
+	this.showImage(currentImage.nextElementSibling || gallery.firstElementChild);
 };
 
 Gallery.prototype.showPreviousImage = function() {
-	showImage(currentImage.previousElementSibling || gallery.lastElementChild);
+	this.showImage(currentImage.previousElementSibling || gallery.lastElementChild);
 };
 
 Gallery.prototype.showImage = function(element) {
@@ -82,7 +82,7 @@ Gallery.prototype.showImage = function(element) {
 	// set currentImage variable equal to img element being passed in
 	currentImage = element;
 	// run openModal
-	openModal();
+	this.openModal();
 };
 
 const gallery = new Gallery(document.querySelector('.gallery'));
