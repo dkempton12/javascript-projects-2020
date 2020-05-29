@@ -9,6 +9,12 @@ function Gallery(gallery) {
 	this.previousButton = this.modal.querySelector('.previous');
 	this.nextButton = this.modal.querySelector('.next');
 
+	// bind our methods to the Gallery when we need them
+	this.showNextImage = this.showNextImage.bind(this);
+	this.showPreviousImage = this.showPreviousImage.bind(this);
+	this.handleKeyUps = this.handleKeyUps.bind(this);
+	this.closeModalWhenClickIsOutsideInnerModal = this.closeModalWhenClickIsOutsideInnerModal.bind(this);
+
 	this.images.forEach((image) =>
 		image.addEventListener('click', function(event) {
 			this.showImage(event.target);
