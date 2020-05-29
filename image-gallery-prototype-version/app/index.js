@@ -31,16 +31,16 @@ Gallery.prototype.openModal = function() {
 		console.info('Modal is already open!');
 	}
 	this.modal.classList.add('open');
-	window.addEventListener('keyup', handleKeyUps);
-	this.nextButton.addEventListener('click', showNextImage);
-	this.previousButton.addEventListener('click', showPreviousImage);
+	window.addEventListener('keyup', this.handleKeyUps);
+	this.nextButton.addEventListener('click', this.showNextImage);
+	this.previousButton.addEventListener('click', this.showPreviousImage);
 };
 
 Gallery.prototype.closeModal = function() {
 	this.modal.classList.remove('open');
-	window.removeEventListener('keyup', handleKeyUps);
-	this.nextButton.removeEventListener('click', showNextImage);
-	this.previousButton.removeEventListener('click', showPreviousImage);
+	window.removeEventListener('keyup', this.handleKeyUps);
+	this.nextButton.removeEventListener('click', this.showNextImage);
+	this.previousButton.removeEventListener('click', this.showPreviousImage);
 };
 
 Gallery.prototype.closeModalWhenClickIsOutsideInnerModal = function(event) {
