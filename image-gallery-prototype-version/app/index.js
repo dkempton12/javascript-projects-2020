@@ -85,4 +85,4 @@ function Gallery(gallery) {
 	this.modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
 }
 
-const gallery = Gallery(document.querySelector('.gallery'));
+const gallery = new Gallery(document.querySelector('.gallery'));
