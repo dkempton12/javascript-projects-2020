@@ -29,7 +29,7 @@ function Gallery(gallery) {
 		})
 	);
 
-	this.modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
+	this.modal.addEventListener('click', this.closeModalWhenClickIsOutsideInnerModal);
 }
 
 Gallery.prototype.openModal = function() {
@@ -86,7 +86,7 @@ Gallery.prototype.showImage = function(element) {
 	this.modal.querySelector('p').textContent = element.dataset.description;
 
 	// set currentImage variable equal to img element being passed in
-	currentImage = element;
+	this.currentImage = element;
 	// run openModal
 	this.openModal();
 };
