@@ -4,7 +4,8 @@ function Gallery(gallery) {
 	}
 
 	// select elements
-	this.images = Array.from(gallery.querySelectorAll('img'));
+	this.gallery = gallery;
+	this.images = Array.from(this.gallery.querySelectorAll('img'));
 	this.modal = document.querySelector('.modal');
 	this.previousButton = this.modal.querySelector('.previous');
 	this.nextButton = this.modal.querySelector('.next');
@@ -16,13 +17,13 @@ function Gallery(gallery) {
 	this.closeModalWhenClickIsOutsideInnerModal = this.closeModalWhenClickIsOutsideInnerModal.bind(this);
 
 	this.images.forEach((image) =>
-		image.addEventListener('click', function(event) {
+		image.addEventListener('click', (event) => {
 			this.showImage(event.target);
 		})
 	);
 
 	this.images.forEach((image) =>
-		image.addEventListener('keyup', function(event) {
+		image.addEventListener('keyup', (event) => {
 			if (event.key === 'Enter') {
 				this.showImage(event.target);
 			}
