@@ -26,7 +26,7 @@ function Gallery(gallery) {
 	this.modal.addEventListener('click', closeModalWhenClickIsOutsideInnerModal);
 }
 
-function openModal() {
+Gallery.prototype.openModal = function() {
 	if (this.modal.matches('.open')) {
 		console.info('Modal is already open!');
 	}
@@ -34,22 +34,22 @@ function openModal() {
 	window.addEventListener('keyup', handleKeyUps);
 	this.nextButton.addEventListener('click', showNextImage);
 	this.previousButton.addEventListener('click', showPreviousImage);
-}
+};
 
-function closeModal() {
+Gallery.prototype.closeModal = function() {
 	this.modal.classList.remove('open');
 	window.removeEventListener('keyup', handleKeyUps);
 	this.nextButton.removeEventListener('click', showNextImage);
 	this.previousButton.removeEventListener('click', showPreviousImage);
-}
+};
 
-function closeModalWhenClickIsOutsideInnerModal(event) {
+Gallery.prototype.closeModalWhenClickIsOutsideInnerModal = function(event) {
 	if (event.target === event.currentTarget) {
 		closeModal();
 	}
-}
+};
 
-function handleKeyUps(event) {
+Gallery.prototype.handleKeyUps = function(event) {
 	if (event.key === 'Escape') {
 		return closeModal();
 	}
@@ -60,17 +60,17 @@ function handleKeyUps(event) {
 	if (event.key === 'ArrowLeft') {
 		return showPreviousImage();
 	}
-}
+};
 
-function showNextImage() {
+Gallery.prototype.showNextImage = function() {
 	showImage(currentImage.nextElementSibling || gallery.firstElementChild);
-}
+};
 
-function showPreviousImage() {
+Gallery.prototype.showPreviousImage = function() {
 	showImage(currentImage.previousElementSibling || gallery.lastElementChild);
-}
+};
 
-function showImage(element) {
+Gallery.prototype.showImage = function(element) {
 	// show image data in the modal
 	// img
 	this.modal.querySelector('img').src = element.src;
@@ -83,6 +83,6 @@ function showImage(element) {
 	currentImage = element;
 	// run openModal
 	openModal();
-}
+};
 
 const gallery = new Gallery(document.querySelector('.gallery'));
