@@ -1,1 +1,1 @@
-Refactor of image-gallery project, to include prototypes
+Refactor of image-gallery project, to include prototype functions 
