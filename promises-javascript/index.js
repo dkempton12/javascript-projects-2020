@@ -8,3 +8,7 @@ function makeCoffees(addOns = []) {
 	});
 	return coffeePromise;
 }
+
+const coffee1 = makeCoffees([ 'milk' ]);
+const coffee2 = makeCoffees([ 'cream' ]);
+const coffee3 = makeCoffees([ 'latte', 'skim milk', 'brown sugar', 'cinnamon' ]);
