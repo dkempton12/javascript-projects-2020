@@ -6,4 +6,5 @@ function makeCoffees(addOns = []) {
 			resolve(`Your coffee is ready with: ${addOns.join(', ')}`);
 		}, timeToMakeCoffee);
 	});
+	return coffeePromise;
 }
