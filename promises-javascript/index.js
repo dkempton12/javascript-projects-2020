@@ -12,3 +12,9 @@ function makeCoffees(addOns = []) {
 const coffee1 = makeCoffees([ 'milk' ]);
 const coffee2 = makeCoffees([ 'cream' ]);
 const coffee3 = makeCoffees([ 'latte', 'skim milk', 'brown sugar', 'cinnamon' ]);
+
+const fullCoffeeOrder = Promise.all([ coffee1, coffee2, coffee3 ]);
+
+fullCoffeeOrder.then((coffee) => {
+	console.log(coffee);
+});
