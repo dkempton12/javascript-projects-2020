@@ -1,4 +1,4 @@
 // Promise function
 function makeCoffees(addOns = []) {
-	const timeToBrew = 1000 + addOns * 300;
+	const coffeePromise = new Promise(function(resolve, reject) {});
 }
