@@ -1,0 +1,1 @@
+Simple **timer Promise callback function** that takes in the number of milliseconds until a Promise should be resolved.
