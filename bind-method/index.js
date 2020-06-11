@@ -9,3 +9,7 @@ const module = {
 // In other words, this variable being declared is being stored on the Window (therefor, this = Window)
 const getRandomNumberUnbound = module.getRandomNumber;
 console.log(getRandomNumberUnbound());
+
+// binding getRandomNumberUnbound to the module
+const getRandomNumberBound = getRandomNumberUnbound.bind(module);
+console.log(getRandomNumberBound()); // returns the 20 value
