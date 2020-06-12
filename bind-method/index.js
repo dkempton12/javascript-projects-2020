@@ -1,5 +1,5 @@
 const module = {
-	randomNumber: 20,
+	number: 20,
 	getRandomNumber: function() {
 		return this.randomNumber;
 	}
@@ -7,9 +7,9 @@ const module = {
 
 // example where the this vale of getRandomNumber is equal to the Window
 // In other words, this variable being declared is being stored on the Window (therefor, this = Window)
-const getRandomNumberUnbound = module.getRandomNumber;
-console.log(getRandomNumberUnbound());
+const getNumberUnbound = module.getRandomNumber;
+console.log(getNumberUnbound());
 
 // binding getRandomNumberUnbound to the module
-const getRandomNumberBound = getRandomNumberUnbound.bind(module);
-console.log(getRandomNumberBound()); // returns the 20 value
+const getNumberBound = getNumberUnbound.bind(module);
+console.log(getNumberBound()); // returns the 20 value
