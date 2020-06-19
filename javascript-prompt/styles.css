@@ -1,0 +1,13 @@
+body {
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: #37bc61;
+}
+
+.container {
+	padding: 3rem;
+	background: #fff;
+	border: 3px solid #ebebeb;
+}
