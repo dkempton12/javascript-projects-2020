@@ -1,0 +1,1 @@
+Using async and await to mimic text typing. Each text element takes a random amount of time to be typed out, based on a random number function that generates the amount of milliseconds to wait.
