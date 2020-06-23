@@ -3,10 +3,21 @@ body {
 	display: grid;
 	justify-content: center;
 	align-items: center;
+	font-family: sans-serif;
+	line-height: 1.5;
 }
 
 .container {
 	max-width: 600px;
 	padding: 1.5rem;
 	border: 1px solid #ededed;
+}
+
+.container h1 {
+	color: #1464f4;
+}
+
+.container h1,
+p {
+	font-weight: 300;
 }
