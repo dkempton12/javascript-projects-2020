@@ -7,3 +7,10 @@ function timer(time) {
 function generateRandomNumber(min, max, multiplier = Math.random()) {
 	return multiplier * (max - min) + min;
 }
+
+function type(element) {
+	const text = element.textContent;
+	console.log(text);
+}
+
+type();
