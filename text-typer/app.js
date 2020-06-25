@@ -10,7 +10,7 @@ function generateRandomNumber(min, max, multiplier = Math.random()) {
 
 function type(element) {
 	const text = element.textContent;
-	console.log(text);
+	const textSoFar = '';
 }
 
 type();
