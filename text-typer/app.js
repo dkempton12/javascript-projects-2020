@@ -12,7 +12,7 @@ async function type(element) {
 	const text = element.textContent;
 	let textSoFar = '';
 	for (const letter of text) {
-		// set random time for the typing
+		// set random time for the typing - grabbing properties from the dataset
 		const { typeMin, typeMax } = element.dataset;
 		const timeToWait = generateRandomNumber(typeMin, typeMax);
 		await timer(timeToWait);
