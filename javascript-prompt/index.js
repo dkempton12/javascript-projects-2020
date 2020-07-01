@@ -3,3 +3,20 @@ function timer(time) {
 		setTimeout(resolve, time);
 	});
 }
+
+function ask(options) {
+	return new Promise(function(resolve) {
+		// create popup prompt element
+		const popup = document.createElement('form');
+		popup.classList.add('popup');
+		popup.insertAdjacentHTML(
+			'afterbegin',
+			`<fieldset>
+         <label>${options.title}</label>
+         <input type="text' name="input">
+         <button type="submit">Submit</button>
+        </fieldset>
+      `
+		);
+	});
+}
