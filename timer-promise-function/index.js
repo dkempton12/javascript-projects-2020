@@ -18,5 +18,9 @@ function ask(options) {
         </fieldset>
       `
 		);
+		popup.addEventListener('click', function(event) {
+			event.preventDefault();
+			resolve(event.target.input.value);
+		});
 	});
 }
