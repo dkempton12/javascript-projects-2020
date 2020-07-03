@@ -28,3 +28,5 @@ function ask(options) {
 		);
 	});
 }
+
+function askQuestion() {}
