@@ -1,0 +1,1 @@
+Finding the average of array elements using the **reduce** method.
