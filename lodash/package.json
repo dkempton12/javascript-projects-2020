@@ -1,0 +1,21 @@
+{
+	"name": "lodashtesting",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel index.html"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"bundler": "^0.8.0",
+		"parcel": "^1.12.4"
+	},
+	"browserslist": [
+		"last 1 chrome versions"
+	],
+	"dependencies": {
+		"lodash": "^4.17.19"
+	}
+}
