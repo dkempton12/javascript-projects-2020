@@ -1,1 +1,1 @@
-Finding the average of array elements using the **reduce** method.
+Finding the average of array elements using the **reduce** method, and dividing by **array.length**.
