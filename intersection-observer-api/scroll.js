@@ -26,6 +26,15 @@ function acceptTerms() {
 	}
 	const acceptButton = document.querySelector('.accept');
 
+	// callback
+	function observeCallback(payback) {
+		if (payback[0].intersectionRatio === 1) {
+			acceptButton.disabled = false;
+		} else {
+			acceptButton.disabled = true;
+		}
+	}
+
 	const intersection = new IntersectionObserver(observeCallback, {
 		root: text,
 		threshold: 1
