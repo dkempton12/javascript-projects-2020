@@ -18,3 +18,16 @@ const ob = new IntersectionObserver(observationCallBack, {
 });
 
 ob.observe(text.lastElementChild); // Watching for last element in the text div
+
+function acceptTerms() {
+	const text = document.querySelector('.text');
+	if (!text) {
+		return;
+	}
+	const acceptButton = document.querySelector('.accept');
+
+	const intersection = new IntersectionObserver(observeCallback, {
+		root: text,
+		threshold: 1
+	});
+}
