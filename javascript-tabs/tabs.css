@@ -26,25 +26,26 @@ body {
 	color: #fff;
 }
 
-button {
+.tabButton {
 	padding: 10px;
 	border: none;
 	border-radius: 5px 5px 0 0;
 	background: #cdcdcd;
+	font-weight: bold;
 	color: #282828;
 	--bs-color: rgba(0, 0, 0, 0.1);
 	box-shadow: inset 0 -2px 5px var(--bs-color);
 	cursor: pointer;
 }
 
-button[aria-selected="true"] {
+.tabButton[aria-selected="true"] {
 	transition: ease-in 0.2s;
 	background: #007fff;
 	box-shadow: none;
 	color: #fff;
 }
 
-button:focus {
+.tabButton:focus {
 	outline: 0;
 	--bs-color: rgba(0, 0, 0, 0.4);
 }
