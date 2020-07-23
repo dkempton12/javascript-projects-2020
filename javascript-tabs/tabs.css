@@ -5,7 +5,9 @@ body {
 
 .container {
 	max-width: 900px;
-	margin: 0 auto;
+	margin: 2rem auto;
+	padding: 3rem;
+	background: lightseagreen;
 }
 .tabs {
 	display: grid;
@@ -18,7 +20,7 @@ body {
 }
 
 [role="tabpanel"] {
-	padding: 15px;
+	padding: 2rem;
 	background: #007fff;
 	font-size: inherit;
 	color: #fff;
@@ -36,6 +38,7 @@ button {
 }
 
 button[aria-selected="true"] {
+	transition: ease-in 0.2s;
 	background: #007fff;
 	box-shadow: none;
 	color: #fff;
