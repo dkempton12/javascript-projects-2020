@@ -16,6 +16,6 @@
 		"last 1 chrome versions"
 	],
 	"dependencies": {
-		"lodash": "^4.17.19"
+		"lodash": "^4.17.21"
 	}
 }
